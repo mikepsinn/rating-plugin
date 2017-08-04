@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Emotion Reminders" >
+        <ListPreference
+            android:key="moodInterval"
+            android:title="@string/pref_rating_schedule"
+            android:entryValues="@array/mood_interval_entryValues"
+            android:entries="@array/mood_interval_entries"
+            android:defaultValue="2" />
+
+
+        <CheckBoxPreference
+            android:key="addNoteAfterRating"
+            android:title="Add a note after rating"
+            android:defaultValue="false"
+            />
+
+        <CheckBoxPreference
+            android:key="doubleTapClose"
+            android:title="@string/pref_allow_to_skip_rating"
+            android:summary="@string/pref_allow_to_skip_rating_hint"
+            android:defaultValue="true"
+            />
+    </PreferenceCategory>
+ <!--
+    <PreferenceCategory android:title="Other reminders" >
+        &lt;!&ndash;<ListPreference&ndash;&gt;
+            &lt;!&ndash;android:key="@string/reminders_key_mood"&ndash;&gt;
+            &lt;!&ndash;android:title="@string/reminders_mood_title"&ndash;&gt;
+            &lt;!&ndash;android:entryValues="@array/mood_interval_entryValues"&ndash;&gt;
+            &lt;!&ndash;android:entries="@array/mood_interval_entries"&ndash;&gt;
+            &lt;!&ndash;android:defaultValue="0"/>&ndash;&gt;
+        <ListPreference
+            android:key="@string/reminders_key_diet"
+            android:title="@string/reminders_diet_title"
+            android:entryValues="@array/mood_interval_entryValues"
+            android:entries="@array/mood_interval_entries"
+            android:defaultValue="0"/>
+        <ListPreference
+            android:key="@string/reminders_key_treatment"
+            android:title="@string/reminders_treatments_title"
+            android:entryValues="@array/mood_interval_entryValues"
+            android:entries="@array/mood_interval_entries"
+            android:defaultValue="0"/>
+        <ListPreference
+            android:key="@string/reminders_key_symptom"
+            android:title="@string/reminders_symptoms_title"
+            android:entryValues="@array/mood_interval_entryValues"
+            android:entries="@array/mood_interval_entries"
+            android:defaultValue="0"/>
+        <ListPreference
+            android:key="@string/reminders_key_physical"
+            android:title="@string/reminders_physical_title"
+            android:entryValues="@array/mood_interval_entryValues"
+            android:entries="@array/mood_interval_entries"
+            android:defaultValue="0"/>
+    </PreferenceCategory>
+
+    -->
+</PreferenceScreen>
